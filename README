@@ -1,1 +1,15 @@
-# Cancer_Cell_Samples_4_Classification_Models
+Cancer Cell Samples: 4 Classification Models
+
+What is the likelihood that a patient's cancer is malignant? Today, we'll look into this question. We'll optimize, train, make predictions with, and evaluate four classification models - K Nearest Neighbor (KNN), Decision Tree, Support Vector Machine (SVM), and logistic regression - to predict the class of new patient cell sample. We'll work with cell sample data publicly available from the UCI ML repository (https://archive.ics.uci.edu/ml/index.php). The data set includes cell samples from 699 patients with cell characteristics such as clump thickness, uniformity of size, uniformity of shape, marginal adhesion, bare nuclei, single epithelial cell size, and mitoses. A hospital's oncology department, for example, could apply a predictive model alongside diagnostic procedures and patient evaluation to improve cancer diagnosis. Let's break it down:
+
+Part 1: Cleaning and wrangling, including replacing values
+Part 2: Exploratory analysis, including plotting stratified scatter and bubble plots and histograms, working with groupby, and making observations to determine key features
+Part 3: Feature selection of predictors (X) and labeled target (y)
+Part 4: Normalizing feature set using scikit learn's preprocessing.StandardScaler.fit.transform
+Part 5: KNN, including determining and plotting optimal k value, training model and making predictions on test set, generating a confusion matrix heatmap and report, evaluating jaccard and F1 scores
+Part 6: Decision Tree, including determining and plotting optimal max depth, training model and making predictions on test set, visualizing decision tree using pydotplus and graphviz, generating a confusion matrix heatmap and report, evaluating jaccard and F1 scores
+Part 7: SVM, including determining and plotting optimal kernel function, training model and making predictions on test set, generating a confusion matrix heatmap and report, evaluating jaccard and F1 scores
+Part 8: Logistic Regression, including determining and plotting optimal regularization and numerical solver, training model and making predictions on test set, calculating probability, generating a confusion matrix heatmap and report, evaluating jaccard, F1, and log loss scores
+Part 9: Evaluating model performance head-to-head by creating a dataframe of accuracy scores for KNN, Decision Tree, SVM, and Logistic Regression models to make comparisons
+
+We'll cover cleaning, wrangling, and visualizing techniques, apply important scikit learn libraries to develop, optimize, train, and make predictions, and walk through evaluating and comparing models. We'll discover that, using features in this data set, logistic regression generates the highest accuracy of our 4 models. It also has the added benefit of providing percent likelihood that a patient's cancer is malignant. Let's dig in.
